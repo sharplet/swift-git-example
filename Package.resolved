@@ -20,15 +20,6 @@
         }
       },
       {
-        "package": "swift-git",
-        "repositoryURL": "https://github.com/sharplet/swift-git",
-        "state": {
-          "branch": "main",
-          "revision": "5eee08ed69e46910ead89107881b4ea1bd31275f",
-          "version": null
-        }
-      },
-      {
         "package": "swift-system",
         "repositoryURL": "https://github.com/apple/swift-system",
         "state": {

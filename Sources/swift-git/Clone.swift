@@ -10,7 +10,14 @@ struct Clone: ParsableCommand {
   @Argument var path: FilePath?
 
   func run() throws {
-    let path = self.path ?? FilePath(url.lastPathComponent)
-    _ = try Repository.clone(to: path, from: url)
+    let path = path ?? FilePath(url.lastPathComponent)
+    print("Cloning into path '\(path)'...", terminator: "")
+    do {
+      _ = try Repository.clone(to: path, from: url)
+      print(" done.")
+    } catch {
+      print()
+      throw error
+    }
   }
 }

@@ -12,7 +12,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/apple/swift-argument-parser", from: "0.4.3"),
-    .package(url: "https://github.com/sharplet/swift-git", .branch("main")),
+    .package(path: "Packages/swift-git"),
   ],
   targets: [
     .executableTarget(name: "swift-git", dependencies: [.argumentParser, .git]),
