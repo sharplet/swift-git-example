@@ -15,11 +15,7 @@ let package = Package(
     .package(url: "https://github.com/sharplet/swift-git", .branch("main")),
   ],
   targets: [
-    .executableTarget(
-      name: "swift-git",
-      dependencies: [.argumentParser, .git],
-      path: "Packages/swift-git/Sources/swift-git"
-    ),
+    .executableTarget(name: "swift-git", dependencies: [.argumentParser, .git]),
   ]
 )
 

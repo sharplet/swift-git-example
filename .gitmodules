@@ -1,4 +1,0 @@
-[submodule "Packages/swift-git"]
-	path = Packages/swift-git
-	url = https://github.com/sharplet/swift-git.git
-	branch = example
