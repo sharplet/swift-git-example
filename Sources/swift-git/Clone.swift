@@ -18,7 +18,7 @@ struct Clone: ParsableCommand {
     let path = path ?? localPathFromURL
     print("Cloning into path '\(path)'...", terminator: "")
     do {
-      _ = try Repository.clone(to: path, from: url)
+      _ = try Repository.clone(from: url, to: path)
       print(" done.")
     } catch {
       print()
